@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\file">
+      <UniqueIdentifier>{ce3afa59-8fc0-4be5-b880-fbf2021b9d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\encrypt">
+      <UniqueIdentifier>{433b51cf-d0d5-447a-b039-6581eb9c5a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util">
+      <UniqueIdentifier>{aa57766f-4361-4862-a817-24cebdff15fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\format">
+      <UniqueIdentifier>{374b0c3f-7c6f-4f0b-80a4-250a2d233df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net">
+      <UniqueIdentifier>{08ff8d8c-bb14-49c2-b7ef-572a9c0de906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\reg">
+      <UniqueIdentifier>{53972e79-8c52-4be9-8af6-c3959277f41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dbi">
+      <UniqueIdentifier>{5e7fc5ea-958e-4302-a432-9e0dfc79c7b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\file">
+      <UniqueIdentifier>{15355f54-3a14-47fd-a639-a0624767b47e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util">
+      <UniqueIdentifier>{240e7f83-fe3d-43d4-851c-eba0c231f11e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\encrypt">
+      <UniqueIdentifier>{2f0975ec-fd26-4a1b-91ba-18d5e18e0a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\format">
+      <UniqueIdentifier>{b58ae3a2-0e08-45a8-9cd4-553a8393b1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\net">
+      <UniqueIdentifier>{3421b81d-b3f9-4cae-8ece-8b0e533ee704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\reg">
+      <UniqueIdentifier>{d970fba5-ab4b-4d4b-a70c-b9a92f933d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dbi">
+      <UniqueIdentifier>{75f685cf-f7b9-4432-a317-842924d59cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ConfigManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DetailDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hsm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HsmIPAdressDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Replace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\S001Dlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file\FileUtil.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file\FileValidator.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file\FolderDialog.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file\Validator.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file\ValidatorFactory.cpp">
+      <Filter>源文件\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\3DES.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\AesUtil.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\DesEnc.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\DESUtil.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\DigestEngine.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\MacUtil.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\MD5Engine.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encrypt\MD5Util.cpp">
+      <Filter>源文件\encrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\stdafx.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\Util.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\format\HexParseUtil.cpp">
+      <Filter>源文件\format</Filter>
+    </ClCompile>
+    <ClCompile Include="src\format\SQLFormat.cpp">
+      <Filter>源文件\format</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\IPHelper.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\reg\RegeditEditor.cpp">
+      <Filter>源文件\reg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbi\COracle.cpp">
+      <Filter>源文件\dbi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbi\DBConnectInfo.cpp">
+      <Filter>源文件\dbi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbi\dbi5.cpp">
+      <Filter>源文件\dbi</Filter>
+    </ClCompile>
+    <ClCompile Include="include\replacedlg.CPP">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\format\StringUtil.cpp">
+      <Filter>源文件\format</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GeneratorDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConfigManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DetailDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Hsm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HsmIPAdressDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Replace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReplaceDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\S001Dlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\FileUtil.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\FileValidator.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\FolderDialog.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\Validator.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\file\ValidatorFactory.h">
+      <Filter>头文件\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\deelx.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\stdafx.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\Util.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\3des.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\AesUtil.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\DesEnc.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\DESUtil.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\DigestEngine.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\MacUtil.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\MD5Engine.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\encrypt\MD5Util.h">
+      <Filter>头文件\encrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\format\HexParseUtil.h">
+      <Filter>头文件\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\format\SQLFormat.h">
+      <Filter>头文件\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\net\IPHelper.h">
+      <Filter>头文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\reg\RegeditEditor.h">
+      <Filter>头文件\reg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbi\COracle.h">
+      <Filter>头文件\dbi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbi\CSybase.h">
+      <Filter>头文件\dbi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbi\DBConnectInfo.h">
+      <Filter>头文件\dbi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbi\dbi5.h">
+      <Filter>头文件\dbi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\format\StringUtil.h">
+      <Filter>头文件\format</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GeneratorDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\400.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\401.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\402.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\402.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\403.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\403.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\404.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\404.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\405.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\406.ICO">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\407.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\407.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\408.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\408.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\409.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\410.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\411.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\412.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\414.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\416.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\417.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\418.ICO">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\419.ICO">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\420.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Replace.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\toolbar_.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon7.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Downloads\20150616052503236_easyicon_net_32.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Administrator\Downloads\ooopic_1437623009.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Replace.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Replace.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

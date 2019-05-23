@@ -1,0 +1,623 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Replace.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 工具箱"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON1,IDC_STATIC,11,17,20,20
+    LTEXT           "Replace 2.2 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) WJF 2010-2013 ",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_REPLACE_DIALOG DIALOGEX 0, 0, 441, 323
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "工具箱"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE_PATH,60,20,258,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BNT_EXPLORER,325,20,50,14
+    EDITTEXT        IDC_EDIT_FILE_EXTENTION,60,43,258,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_TEXT,60,170,258,101,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_OLD_TEXT,60,67,258,95,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_KEY,60,277,257,14,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "4字节/大小写",IDC_CHECK_SUB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,170,63,10
+    CONTROL         "ASCII",IDC_CHECK_ASCII,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,78,35,10
+    CONTROL         "整倍补位",IDC_CHECK_PADDING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,97,48,10
+    CONTROL         "正则表达式",IDC_CHECK_CASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,327,45,56,10
+    CONTROL         "位/字符串取反",IDC_CHECK_VERSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,117,67,10
+    CONTROL         "行号/换行",IDC_CHECK_ROWNUMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,151,48,10
+    CONTROL         "",IDC_PROGRESS_Total,"msctls_progress32",WS_BORDER,329,276,91,14
+    CONTROL         "双引号/日期和时间",IDC_CHECK_QUOTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,137,83,10
+    CONTROL         "10转16进制/16转10进制",IDC_CHECK_BYTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,224,99,10
+    CONTROL         "高低位置换",IDC_CHECK_HIGLOWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,239,56,10
+    CONTROL         "加密/解密",IDC_CHECK_AES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,260,51,10
+    CONTROL         "去空格",IDC_CHECK_EMPTY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,185,40,10
+    CONTROL         "特殊",IDC_CHECK_SPECIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,328,200,32,10
+    LTEXT           "文件路径",IDC_STATIC_FILEPATH,13,23,33,8
+    LTEXT           "扩展名",IDC_STATIC_PROPERTIES,13,47,25,8
+    LTEXT           "输入",IDC_STATIC_INPUT,14,68,17,8
+    LTEXT           "输出",IDC_STATIC_OUTPUT,14,172,17,8
+    LTEXT           "密钥",IDC_STATIC_KEY,14,281,17,8
+    COMBOBOX        IDC_COMBO_OPER,381,148,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Append",IDC_CHECK_APPEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,381,200,41,10
+    PUSHBUTTON      "T",IDC_BUTTON_REVERSE,40,147,12,35
+END
+
+IDD_DIALOG_HSM DIALOGEX 0, 0, 365, 410
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加密机认证"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "计算/校验",IDCHECK,248,389,50,14
+    PUSHBUTTON      "取消",IDCANCEL,308,389,50,14
+    LTEXT           "卡号：",IDC_STATIC,15,15,25,8
+    EDITTEXT        IDC_EDIT_HSM_CARDNO,76,15,113,14,ES_AUTOHSCROLL
+    LTEXT           "（8字节-10进制）",IDC_STATIC,201,18,64,8
+    LTEXT           "卡片交易序号：",IDC_STATIC,16,36,57,8
+    EDITTEXT        IDC_EDIT_HSM_CARDTRADENO,76,35,113,14,ES_AUTOHSCROLL
+    LTEXT           "（2字节-16进制）",IDC_STATIC,201,38,64,8
+    LTEXT           "交易前金额：",IDC_STATIC,15,74,49,8
+    EDITTEXT        IDC_EDIT_HSM_PREMONEY,76,74,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-10进制）",IDC_STATIC,201,76,64,8
+    LTEXT           "交易金额：",IDC_STATIC,15,94,41,8
+    EDITTEXT        IDC_EDIT_HSM_MONEY,76,94,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-10进制）",IDC_STATIC,201,96,64,8
+    LTEXT           "交易日期：",IDC_STATIC,15,114,41,8
+    EDITTEXT        IDC_EDIT_HSM_TRADEDATE,76,114,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-YYYYMMDD）",IDC_STATIC,201,116,76,8
+    LTEXT           "交易时间：",IDC_STATIC,15,134,41,8
+    EDITTEXT        IDC_EDIT_HSM_TRADETIME,76,134,113,14,ES_AUTOHSCROLL
+    LTEXT           "（3字节-hhmmss）",IDC_STATIC,201,136,65,8
+    LTEXT           "终端编号：",IDC_STATIC,15,154,41,8
+    EDITTEXT        IDC_EDIT_HSM_SAMNO,76,154,113,14,ES_AUTOHSCROLL
+    LTEXT           "（6字节-10进制）",IDC_STATIC,201,156,64,8
+    LTEXT           "终端交易序号：",IDC_STATIC,15,174,57,8
+    EDITTEXT        IDC_EDIT_HSM_SAMTRADENO,76,174,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-16进制）",IDC_STATIC,201,176,64,8
+    LTEXT           "随机数：",IDC_STATIC,15,194,33,8
+    EDITTEXT        IDC_EDIT_HSM_ROM,76,194,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-16进制）",IDC_STATIC,201,196,64,8
+    LTEXT           "卡片认证码：",IDC_STATIC,15,214,49,8
+    EDITTEXT        IDC_EDIT_HSM_CARDUID,76,214,113,14,ES_AUTOHSCROLL
+    LTEXT           "（9字节-16进制）",IDC_STATIC,201,216,64,8
+    LTEXT           "MAC1：",IDC_STATIC,15,234,28,8
+    EDITTEXT        IDC_EDIT_HSM_MAC1,76,234,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-16进制）",IDC_STATIC,201,236,64,8
+    LTEXT           "MAC2：",IDC_STATIC,15,254,28,8
+    EDITTEXT        IDC_EDIT_HSM_MAC2,76,254,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-16进制）",IDC_STATIC,201,256,64,8
+    LTEXT           "TAC：",IDC_STATIC,15,274,22,8
+    EDITTEXT        IDC_EDIT_HSM_TAC,76,274,113,14,ES_AUTOHSCROLL
+    LTEXT           "（4字节-16进制）",IDC_STATIC,201,276,64,8
+    EDITTEXT        IDC_EDIT_COMMENT,15,307,334,76,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "交易类型：",IDC_STATIC,16,56,41,8
+    EDITTEXT        IDC_EDIT_HSM_TRADETYPE,76,55,113,14,ES_AUTOHSCROLL
+    LTEXT           "（1字节-16进制）",IDC_STATIC,202,58,64,8
+END
+
+IDD_DIALOG_S001 DIALOGEX 0, 0, 753, 370
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "S001配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "轮询周期",IDC_STATIC,22,70,331,77
+    LTEXT           "周期类型：",IDC_STATIC,37,87,41,8
+    COMBOBOX        IDC_COMBO_TRADETYPE,82,84,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_INTERVAL,225,83,78,14,ES_AUTOHSCROLL
+    LTEXT           "间隔跨度：",IDC_STATIC,180,86,41,8
+    EDITTEXT        IDC_EDIT_SLEEPTIME,82,105,79,14,ES_AUTOHSCROLL
+    LTEXT           "睡眠时间：",IDC_STATIC,38,108,41,8
+    EDITTEXT        IDC_EDIT_RESTARTTIME,226,105,79,14,ES_AUTOHSCROLL
+    LTEXT           "启动时间：",IDC_STATIC,180,108,41,8
+    CONTROL         "是否重做",IDC_CHECK_REDO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,128,48,10
+    GROUPBOX        "存储过程与SQL语句",IDC_STATIC,22,153,332,196
+    CONTROL         "预处理",IDC_CHECK_prophase,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,170,40,10
+    CONTROL         "数据源",IDC_CHECK_SOURCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,230,40,10
+    CONTROL         "目标源",IDC_CHECK_HANDLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,287,40,10
+    EDITTEXT        IDC_EDIT_SOURCE,37,241,303,42,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEST,37,300,304,42,ES_AUTOHSCROLL
+    GROUPBOX        "通道",IDC_STATIC,22,16,332,50
+    CONTROL         "导出",IDC_RADIO_EXPORT,"Button",BS_AUTORADIOBUTTON,37,49,32,10
+    CONTROL         "导入",IDC_RADIO_IMPORT,"Button",BS_AUTORADIOBUTTON,178,49,32,10
+    LTEXT           "通道编号：",IDC_STATIC,35,32,41,8
+    EDITTEXT        IDC_EDIT_CHANNELNO,81,28,82,14,ES_AUTOHSCROLL
+    LTEXT           "通道名称：",IDC_STATIC,179,32,41,8
+    EDITTEXT        IDC_EDIT_CHANNELNAME,224,28,80,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "预览",IDC_BUTTON_EXPLORER,677,328,50,14
+    PUSHBUTTON      "生成",IDC_BUTTON_GENERATE,532,328,50,14
+    PUSHBUTTON      "导入模板",IDC_BUTTON_IMPORTTEMPLATE,366,328,50,14
+    GROUPBOX        "文件",IDC_STATIC,368,16,362,251
+    CONTROL         "文件头",IDC_CHECK_HEAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,386,30,40,10
+    CONTROL         "文件体",IDC_CHECK_BODY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,384,81,40,10
+    CONTROL         "目录",IDC_CHECK_FOLDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,384,164,32,10
+    EDITTEXT        IDC_EDIT_HEAD,440,41,143,14,ES_AUTOHSCROLL
+    LTEXT           "文件头组成：",IDC_STATIC,386,44,49,8
+    EDITTEXT        IDC_EDIT_HEADHEX,440,58,143,14,ES_AUTOHSCROLL
+    LTEXT           "进制与长度：",IDC_STATIC,386,61,49,8
+    EDITTEXT        IDC_EDIT_BODY,438,92,145,14,ES_AUTOHSCROLL
+    LTEXT           "文件体组成：",IDC_STATIC,384,95,49,8
+    EDITTEXT        IDC_EDIT_BODYHEX,438,109,145,14,ES_AUTOHSCROLL
+    LTEXT           "进制与长度：",IDC_STATIC,384,112,49,8
+    EDITTEXT        IDC_EDIT_BODYSTD,438,126,145,14,ES_AUTOHSCROLL
+    LTEXT           "数据库字段：",IDC_STATIC,384,128,49,8
+    EDITTEXT        IDC_EDIT_BODYSTDTYPE,438,143,145,14,ES_AUTOHSCROLL
+    LTEXT           "数据库类型：",IDC_STATIC,384,146,49,8
+    CONTROL         "MAC码",IDC_CHECK_HEADMAC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,599,43,39,10
+    EDITTEXT        IDC_EDIT_HEADMACTXT,599,58,122,14,ES_AUTOHSCROLL
+    CONTROL         "MAC码",IDC_CHECK_BODYMAC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,598,94,39,10
+    EDITTEXT        IDC_EDIT_BODYMACTXT,598,109,122,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览数据库",IDC_BUTTON_BODYSTD,426,328,50,14
+    EDITTEXT        IDC_EDIT_FILENAME,438,175,145,14,ES_AUTOHSCROLL
+    LTEXT           "文件名组成：",IDC_STATIC,384,178,49,8
+    EDITTEXT        IDC_EDIT_PATHIN,438,209,146,14,ES_AUTOHSCROLL
+    LTEXT           "标准目录：",IDC_STATIC,384,212,41,8
+    EDITTEXT        IDC_EDIT_PATHBAK,438,226,146,14,ES_AUTOHSCROLL
+    LTEXT           "备份目录：",IDC_STATIC,384,229,41,8
+    EDITTEXT        IDC_EDIT_PATHBAKERR,438,243,146,14,ES_AUTOHSCROLL
+    LTEXT           "异常目录：",IDC_STATIC,384,245,41,8
+    EDITTEXT        IDC_EDIT_BODYSPLIT,651,126,20,14,ES_AUTOHSCROLL
+    LTEXT           "分隔符   字段:",IDC_STATIC,599,128,50,8
+    EDITTEXT        IDC_EDIT_FILEVALUE,438,192,145,14,ES_AUTOHSCROLL
+    LTEXT           "文件值组成：",IDC_STATIC,384,195,49,8
+    GROUPBOX        "数据库",IDC_STATIC,597,151,125,104
+    EDITTEXT        IDC_EDIT_DATABASE,633,165,80,14,ES_AUTOHSCROLL
+    LTEXT           "表名：",IDC_STATIC,605,167,25,8
+    CONTROL         "",IDC_TREE_DATABASE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,607,184,106,66
+    CONTROL         "全选/反选",IDC_CHECK_SELECTALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,479,330,51,10
+    EDITTEXT        IDC_EDIT_PROPHASE,37,184,301,42,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MYTEMPLATE,367,270,363,54,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "文件:",IDC_STATIC,681,129,20,8
+    EDITTEXT        IDC_EDIT_FILESPLIT,702,127,18,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_DETAIL DIALOGEX 0, 0, 458, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DETAIL,7,7,444,255,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOG_IPADDRESS DIALOGEX 0, 0, 316, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配置加密机地址/Tuxedo地址"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存配置",IDOK,190,60,54,14
+    LTEXT           "IP地址：",IDC_STATIC,23,27,32,8
+    CONTROL         "",IDC_IPADDRESS_HSM,"SysIPAddress32",WS_TABSTOP,75,24,100,15
+    LTEXT           "端口号：",IDC_STATIC,23,44,33,8
+    EDITTEXT        IDC_EDIT_PORT,75,43,58,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "测试NOW服务",IDC_BUTTON_TEST,251,60,58,14
+    LTEXT           "",IDC_STATIC_RESULT,25,7,248,8
+    LTEXT           "1、保存配置至C:\\hsm.conf。\n\n2、测试NOW服务用于测试Tuxedo服务。",IDC_STATIC,192,20,108,33
+END
+
+IDD_DIALOG_GENERATOR DIALOGEX 0, 0, 497, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "浏览表",ID_BUTTON_SCAN_TABLE,211,16,50,14
+    PUSHBUTTON      "取消",IDCANCEL,440,332,50,14
+    CONTROL         "",IDC_TREE_TABLES,"SysTreeView32",TVS_SHOWSELALWAYS | TVS_CHECKBOXES | TVS_FULLROWSELECT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,195,339
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,2,0,1
+ PRODUCTVERSION 2,2,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "Linkage"
+            VALUE "FileDescription", "日常工具合集"
+            VALUE "FileVersion", "2.2.0.1"
+            VALUE "InternalName", "Replace.exe"
+            VALUE "LegalCopyright", "(C) Linkage。保留所有权利。"
+            VALUE "OriginalFilename", "Replace.exe"
+            VALUE "ProductName", "工具箱"
+            VALUE "ProductVersion", "2.2.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_REPLACE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 434
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+
+    IDD_DIALOG_HSM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 403
+    END
+
+    IDD_DIALOG_S001, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 746
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_DIALOG_DETAIL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 451
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_DIALOG_IPADDRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG_GENERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "res\\416.ico"
+IDI_ICON_MAC            ICON                    "res\\400.ico"
+IDI_ICON_DES            ICON                    "res\\401.ico"
+IDI_ICON_AES            ICON                    "res\\402.ico"
+IDI_ICON_MD5            ICON                    "res\\403.ico"
+IDI_ICON_UPPER          ICON                    "res\\404.ico"
+IDI_ICON_LENGTH         ICON                    "res\\405.ico"
+IDI_ICON_HEX            ICON                    "res\\406.ico"
+IDI_ICON_STRINGCAT      ICON                    "res\\407.ico"
+IDI_ICON_SQL_FORMAT     ICON                    "res\\408.ico"
+IDI_ICON_SQL            ICON                    "res\\409.ico"
+IDI_ICON_REPLACE        ICON                    "res\\410.ico"
+IDI_ICON_DELETE         ICON                    "res\\411.ico"
+IDI_ICON_MAC_VALIDATE   ICON                    "res\\412.ico"
+IDI_ICON_PROXY          ICON                    "res\\414.ico"
+IDI_ICON_PURCHASE       ICON                    "res\\417.ico"
+IDI_ICON_LOADDX         ICON                    "res\\418.ICO"
+IDI_ICON_LOADONLINE     ICON                    "res\\419.ICO"
+IDI_ICON_CONFIGS001     ICON                    "res\\420.ico"
+IDI_ICON_JAVASQLAPPEND  ICON                    "C:\\Users\\Administrator\\Downloads\\20150616052503236_easyicon_net_32.ico"
+IDI_ICON_UNICODE        ICON                    "C:\\Users\\Administrator\\Downloads\\ooopic_1437623009.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAINFRAME MENU
+BEGIN
+    POPUP "菜单(&F)"
+    BEGIN
+        MENUITEM "退出(&Q)",                      ID_QUIT
+    END
+    POPUP "功能(&T)"
+    BEGIN
+        POPUP "加密(&D)"
+        BEGIN
+            MENUITEM "MAC",                         ID_MAC
+            MENUITEM "DES",                         ID_DES
+            MENUITEM "AES",                         ID_AES
+            MENUITEM "MD5",                         ID_MD5
+        END
+        POPUP "格式(&Q)"
+        BEGIN
+            MENUITEM "大小写",                         ID_CASE
+            MENUITEM "长度",                          ID_LENGTH
+            MENUITEM "进制",                          ID_BYTE
+            MENUITEM "SQL日期",                       ID_SQLDATE
+            MENUITEM "SQL格式化",                      ID_SQLFORMAT
+            MENUITEM "字符拼接",                        ID_STRINGCAT
+            MENUITEM "JavaSQLAppend",               ID_JAVASQLAPPEND
+            MENUITEM "Unicode",                     ID_UNICODE
+        END
+        POPUP "文件(&F)"
+        BEGIN
+            MENUITEM "替换",                          ID_REPLACE
+            MENUITEM "删除",                          ID_DELETE
+        END
+        POPUP "其他(&O)"
+        BEGIN
+            MENUITEM "验证",                          ID_VALIDATE
+            MENUITEM "记录",                          ID_RECORD
+            MENUITEM "配置S001",                      ID_CONIFGS001
+            MENUITEM "生成Pojo对象",                    ID_MENU_GENERATOR
+        END
+        POPUP "交易(&T)"
+        BEGIN
+            MENUITEM "消费文件格式",                      ID_PURCHASE_VALIDATE
+            MENUITEM "移动电信充值",                      ID_LOADDX_VALIDATE
+            MENUITEM "在线支付充值",                      ID_LOADONLINE_VALIDATE
+        END
+    END
+    POPUP "网络(&N)"
+    BEGIN
+        MENUITEM "Ping(&P)",                    ID_PING
+        MENUITEM "Ftp登陆(&F)",                   ID_FTP
+        MENUITEM "IP地址(&I)",                    ID_IPADDRESS
+        MENUITEM "Telnet端口(&T)",                ID_TELNET
+        MENUITEM "Oralce登陆(&O)",                ID_ORACLE_LOGIN
+        MENUITEM "启用代理(&S)",                    ID_ENABLEPROXY, INACTIVE
+        MENUITEM "配置加密机(&H)",                   ID_MENU_HSM
+    END
+    POPUP "卡片(&C)"
+    BEGIN
+        POPUP "消费"
+        BEGIN
+            MENUITEM "MAC1",                        ID_PURCHARSE_MAC1
+            MENUITEM "MAC2",                        ID_PURCHARSE_MAC2
+            MENUITEM "TAC",                         ID_PURCHARSE_TAC
+        END
+        POPUP "充值"
+        BEGIN
+            MENUITEM "MAC1",                        ID_LOAD_MAC1
+            MENUITEM "MAC2",                        ID_LOAD_MAC2
+            MENUITEM "TAC",                         ID_LOAD_TAC
+        END
+        MENUITEM "安全报文",                        ID_SAFE_MAC
+        POPUP "M1卡"
+        BEGIN
+            MENUITEM "KEYA",                        ID_M1_KEYA
+            MENUITEM "KEYB",                        ID_M1_KEYB
+            MENUITEM "TAC",                         ID_M1_TAC
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "如何实现(&D)",                    ID_HELP
+        MENUITEM "关于工具箱(&A)",                   ID_ABOUT
+    END
+END
+
+IDR_MENU_TEXT MENU
+BEGIN
+    POPUP "菜单(&M)"
+    BEGIN
+        MENUITEM "全部清空(&C)",                    ID_MENU_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MENU_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_MAC
+    BUTTON      ID_DES
+    BUTTON      ID_AES
+    BUTTON      ID_MD5
+    SEPARATOR
+    BUTTON      ID_CASE
+    BUTTON      ID_LENGTH
+    BUTTON      ID_BYTE
+    BUTTON      ID_STRINGCAT
+    BUTTON      ID_JAVASQLAPPEND
+    BUTTON      ID_UNICODE
+    SEPARATOR
+    BUTTON      ID_SQLFORMAT
+    SEPARATOR
+    BUTTON      ID_REPLACE
+    BUTTON      ID_DELETE
+    SEPARATOR
+    BUTTON      ID_VALIDATE
+    BUTTON      ID_PURCHASE_VALIDATE
+    BUTTON      ID_LOADDX_VALIDATE
+    BUTTON      ID_LOADONLINE_VALIDATE
+    BUTTON      ID_CONIFGS001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MENU_MAINFRAME      BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 Replace(&A)..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_REPLACE              "文件内容替换"
+    ID_DELETE               "文件删除"
+    ID_VALIDATE             "MAC校验"
+    ID_RECORD               "记录日志"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MAC                  "MAC码"
+    ID_DES                  "DES算法"
+    ID_AES                  "AES算法"
+    ID_MD5                  "MD5算法"
+    ID_CASE                 "大小写"
+    ID_LENGTH               "字符串长度"
+    ID_BYTE                 "16进制转换"
+    ID_SQLDATE              "SQL日期"
+    ID_SQLFORMAT            "SQL格式化"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENABLEPROXY          "设置代理"
+    ID_STRINGCAT            "字符拼接"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PURCHASE_VALIDATE    "消费文件验证"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LOADDX_VALIDATE      "移动电信充值文件验证"
+    ID_LOADONLINE_VALIDATE  "在线充值文件验证"
+    ID_CONIFGS001           "配置S001"
+    ID_MENU_CLEAR           "清空文本"
+END
+
+STRINGTABLE
+BEGIN
+    ID_JAVASQLAPPEND        "Java Append SQL"
+    ID_UNICODE              "Unicode转换"
+    ID_MENU_GENERATOR       "生成Pojo对象"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Replace.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

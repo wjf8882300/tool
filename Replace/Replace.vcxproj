@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2C01ADB7-8760-4E35-9397-3032CC0357DD}</ProjectGuid>
+    <RootNamespace>Replace</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\debug\</OutDir>
+    <IntDir>..\build\debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>..\build\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;lib\Mac\include;lib\Aes\include;E:\study\C++\poco-1.4.6p4-all\Foundation\include;E:\study\C++\poco-1.4.6p4-all\Util\include;E:\study\C++\poco-1.4.6p4-all\Net\include;lib\oci;E:\study\C++\tinyxml_2_6_2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4800;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Aesmtd.lib;Tinyxmlmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\Mac\lib;lib\Aes\lib;E:\study\C++\poco-1.4.6p4-all\lib;lib\oci\lib;E:\study\C++\tinyxml_2_6_2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>include;lib\Mac\include;lib\Aes\include;E:\study\C++\poco-1.4.6p4-all\Foundation\include;E:\study\C++\poco-1.4.6p4-all\Util\include;E:\study\C++\poco-1.4.6p4-all\Net\include;lib\oci;E:\study\C++\tinyxml_2_6_2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4996;4099;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Macmt.lib;AESmt.lib;Tinyxmlmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\Mac\lib;lib\Aes\lib;E:\study\C++\poco-1.4.6p4-all\lib;lib\oci\lib;E:\study\C++\tinyxml_2_6_2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\replacedlg.CPP" />
+    <ClCompile Include="src\ConfigManager.cpp" />
+    <ClCompile Include="src\DetailDlg.cpp" />
+    <ClCompile Include="src\format\StringUtil.cpp" />
+    <ClCompile Include="src\GeneratorDlg.cpp" />
+    <ClCompile Include="src\Hsm.cpp" />
+    <ClCompile Include="src\HsmIPAdressDlg.cpp" />
+    <ClCompile Include="src\Replace.cpp" />
+    <ClCompile Include="src\S001Dlg.cpp" />
+    <ClCompile Include="src\file\FileUtil.cpp" />
+    <ClCompile Include="src\file\FileValidator.cpp" />
+    <ClCompile Include="src\file\FolderDialog.cpp" />
+    <ClCompile Include="src\file\Validator.cpp" />
+    <ClCompile Include="src\file\ValidatorFactory.cpp" />
+    <ClCompile Include="src\encrypt\3DES.cpp" />
+    <ClCompile Include="src\encrypt\AesUtil.cpp" />
+    <ClCompile Include="src\encrypt\DesEnc.cpp" />
+    <ClCompile Include="src\encrypt\DESUtil.cpp" />
+    <ClCompile Include="src\encrypt\DigestEngine.cpp" />
+    <ClCompile Include="src\encrypt\MacUtil.cpp" />
+    <ClCompile Include="src\encrypt\MD5Engine.cpp" />
+    <ClCompile Include="src\encrypt\MD5Util.cpp" />
+    <ClCompile Include="src\util\stdafx.cpp" />
+    <ClCompile Include="src\util\Util.cpp" />
+    <ClCompile Include="src\format\HexParseUtil.cpp" />
+    <ClCompile Include="src\format\SQLFormat.cpp" />
+    <ClCompile Include="src\net\IPHelper.cpp" />
+    <ClCompile Include="src\reg\RegeditEditor.cpp" />
+    <ClCompile Include="src\dbi\COracle.cpp" />
+    <ClCompile Include="src\dbi\DBConnectInfo.cpp" />
+    <ClCompile Include="src\dbi\dbi5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConfigManager.h" />
+    <ClInclude Include="include\DetailDlg.h" />
+    <ClInclude Include="include\format\StringUtil.h" />
+    <ClInclude Include="include\GeneratorDlg.h" />
+    <ClInclude Include="include\Hsm.h" />
+    <ClInclude Include="include\HsmIPAdressDlg.h" />
+    <ClInclude Include="include\Replace.h" />
+    <ClInclude Include="include\ReplaceDlg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="include\S001Dlg.h" />
+    <ClInclude Include="include\file\FileUtil.h" />
+    <ClInclude Include="include\file\FileValidator.h" />
+    <ClInclude Include="include\file\FolderDialog.h" />
+    <ClInclude Include="include\file\Validator.h" />
+    <ClInclude Include="include\file\ValidatorFactory.h" />
+    <ClInclude Include="include\util\deelx.h" />
+    <ClInclude Include="include\util\stdafx.h" />
+    <ClInclude Include="include\util\Util.h" />
+    <ClInclude Include="include\encrypt\3des.h" />
+    <ClInclude Include="include\encrypt\AesUtil.h" />
+    <ClInclude Include="include\encrypt\DesEnc.h" />
+    <ClInclude Include="include\encrypt\DESUtil.h" />
+    <ClInclude Include="include\encrypt\DigestEngine.h" />
+    <ClInclude Include="include\encrypt\MacUtil.h" />
+    <ClInclude Include="include\encrypt\MD5Engine.h" />
+    <ClInclude Include="include\encrypt\MD5Util.h" />
+    <ClInclude Include="include\format\HexParseUtil.h" />
+    <ClInclude Include="include\format\SQLFormat.h" />
+    <ClInclude Include="include\net\IPHelper.h" />
+    <ClInclude Include="include\reg\RegeditEditor.h" />
+    <ClInclude Include="include\dbi\COracle.h" />
+    <ClInclude Include="include\dbi\CSybase.h" />
+    <ClInclude Include="include\dbi\DBConnectInfo.h" />
+    <ClInclude Include="include\dbi\dbi5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Downloads\20150616052503236_easyicon_net_32.ico" />
+    <Image Include="C:\Users\Administrator\Downloads\ooopic_1437623009.ico" />
+    <Image Include="res\400.ico" />
+    <Image Include="res\401.ico" />
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\402.ico" />
+    <Image Include="res\402.ico" />
+    <Image Include="res\403.ico" />
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\403.ico" />
+    <Image Include="res\404.ico" />
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\404.ico" />
+    <Image Include="res\405.ico" />
+    <Image Include="res\406.ICO" />
+    <Image Include="res\407.ico" />
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\407.ico" />
+    <Image Include="..\..\..\..\Picture\图标\图标大全(ico格式)\杂项\cube\408.ico" />
+    <Image Include="res\408.ico" />
+    <Image Include="res\409.ico" />
+    <Image Include="res\410.ico" />
+    <Image Include="res\411.ico" />
+    <Image Include="res\412.ico" />
+    <Image Include="res\414.ico" />
+    <Image Include="res\416.ico" />
+    <Image Include="res\417.ico" />
+    <Image Include="res\418.ICO" />
+    <Image Include="res\419.ICO" />
+    <Image Include="res\420.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon7.ico" />
+    <Image Include="res\Replace.ico" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\toolbar_.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Replace.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Replace.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Replace.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
